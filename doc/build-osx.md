@@ -22,6 +22,10 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
     brew install librsvg
 
+In case you want to build the disk image with `make deploy` (.dmg / optional), you need RSVG
+ 
+    brew install librsvg
+
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
 Build Garlicoin Core
@@ -38,6 +42,8 @@ Build Garlicoin Core
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
+    In case you want to build the disk image with `make deploy` (.dmg / optional), by passing `--with-gui` to configure.
+    
         ./autogen.sh
         ./configure
         make
